@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Bucket</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Jaini&family=Bebas+Neue&family=Black+Ops+One&family=Montenegrin+Gothic+One&family=Pacifico&family=Rampart+One&family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+
+    .image{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+    @keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(2000px);
+    }
+}
+
+.container h2{
+    font-family:"Black Ops One", system-ui;
+}
+
+.container h3{
+    font-family:jaini, sans-serif;
+    padding-top: 0%;
+}
+
+.container .btn{
+    border: 1px solid red;
+
+}
+
+.menu-card{
+    border: none;
+    transition: .3s;
+    overflow: hidden;
+    border-radius:15px;
+}
+
+.menu-card img{
+    height:220px;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.menu-card:hover img{
+    transform:scale(1.08);
+}
+    </style>
+
+    <section class="container py-5" id="menu">
+
+    <h2 class="text-center fw-bold mb-5">Our Choice is in Our Hand🍕</h2>
+
+    <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/mar (1).jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Margherita</h5>
+                    <p>Classic cheese pizza</p>
+                    <p>Price: ₹199</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/double cheese.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Double Cheese</h5>
+                    <p>Extra cheese pizza</p>
+                    <p>Price: ₹249</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/farmhouse.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Farmhouse</h5>
+                    <p>Loaded with vegetables and cheese</p>
+                    <p>Price: ₹279</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/veggie supreme.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Veggie Supreme</h5>
+                    <p>Loaded with fresh vegetables</p>
+                    <p>Price: ₹299</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/mexican green wave.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Mexican Green Wave</h5>
+                    <p>Spicy green peppers and jalapenos</p>
+                    <p>Price: ₹349</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/cheese burst.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Cheese Burst</h5>
+                    <p>Explosive cheese experience</p>
+                    <p>Price: ₹399</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/paneer tikka.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Paneer Tikka</h5>
+                    <p>Indian cottage cheese pizza</p>
+                    <p>Price: ₹349</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/BBQ Chicken Pizza.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>BBQ Chicken</h5>
+                    <p>Grilled chicken with BBQ sauce</p>
+                    <p>Price: ₹399</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/Pepperoni Pizza.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Pepperoni</h5>
+                    <p>Classic pepperoni pizza</p>
+                    <p>Price: ₹449</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/Tandoori Chicken Pizza.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Tandoori Chicken</h5>
+                    <p>Grilled chicken with tandoori sauce</p>
+                    <p>Price: ₹399</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/mushroom delight.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Mushroom Delight</h5>
+                    <p>Fresh mushrooms with special sauce</p>
+                    <p>Price: ₹349</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/chicken supreme.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Chicken Supreme</h5>
+                    <p>Grilled chicken with special sauce</p>
+                    <p>Price: ₹399</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+    <section class="container py-5" id="menu">
+
+    <h2 class="text-center fw-bold mb-5">“The Perfect Finish to Every Feast.”🍹🍰</h2>
+
+    <div class="row g-4">
+    <h2 class="text-center fw-bold mb-3">Drinks</h2>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/drinks soft.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Soft Drinks</h5>
+                    <p>Refreshing with soft drink</p>
+                    <p>Price: ₹30</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/LEMON MINT.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>LEMON MINT</h5>
+                    <p>Refreshing lemon-mint drink</p>
+                    <p>Price: ₹35</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/smoothie (2).jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Smoothie</h5>
+                    <p>Refreshing fruit smoothie</p>
+                    <p>Price: ₹150</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/milkshake.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Milkshake</h5>
+                    <p>Refreshing milkshake</p>
+                    <p>Price: ₹120</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center fw-bold mb-3">Desserts</h2>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/desserts (1).jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Ice Cream</h5>
+                    <p>Scoop of ice cream</p>
+                    <p>Price: ₹80</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/desserts (2).jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Brownie</h5>
+                    <p>Rich chocolate brownie</p>
+                    <p>Price: ₹100</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/desserts (3).jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Cake</h5>
+                    <p>Delicious chocolate cake</p>
+                    <p>Price: ₹150</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card menu-card">
+                <img src="Assets/desserts (4).jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Brownie with Ice Cream</h5>
+                    <p>Rich chocolate brownie with scoop of ice cream</p>
+                    <p>Price: ₹120</p>
+                    <button class="btn btn-danger">Order Now</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

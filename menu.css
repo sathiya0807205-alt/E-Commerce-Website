@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar .row{
+    font-family:jaini, sans-serif;
+    cursor:pointer;
+}
+
+.hero{
+    background-image: url(Assets/dec.avif);
+    color:white;
+    background-size: cover;
+    padding:30px 30px 30px;
+    background-position: center;
+}
+
+.hero h2{
+    font-family: 'Rampart One', cursive;
+}
+
+.image{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.bike{
+    position: absolute;
+    left: -200px;
+    z-index: 2; 
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(2000px);
+    }
+}
+
+.container h2{
+    font-family:"Black Ops One", system-ui;
+}
+
+.container h3{
+    font-family:jaini, sans-serif;
+    padding-top: 0%;
+}
+
+.container .btn{
+    border: 1px solid red;
+
+}
+
+.menu-card{
+    border: none;
+    transition: .3s;
+    overflow: hidden;
+    border-radius:15px;
+}
+
+.menu-card img{
+    height:220px;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.menu-card:hover img{
+    transform:scale(1.08);
+}
+
+.pizza-game {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.combo-section {
+    margin-top: 30px;
+}
+
+.combo-card {
+    height: 100%;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.combo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.combo-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.combo-card:hover img {
+    transform: scale(1.06);
+}
+
+.combo-content {
+    padding: 18px;
+}
+
+.combo-tag {
+    display: inline-block;
+    background: #ffe5e5;
+    color: #d62828;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.combo-content h3 {
+    font-size: 21px;
+    margin: 12px 0 8px;
+}
+
+.combo-content p {
+    color: #666;
+    min-height: 48px;
+}
+
+.combo-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.combo-bottom strong {
+    font-size: 22px;
+    color: #d62828;
+}
+
+
